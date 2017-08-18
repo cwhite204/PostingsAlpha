@@ -1,1 +1,10 @@
-%h1 Postan
+.posts-wrapper.row
+  .posts-title
+    %h2 All Posts
+  -@posts.each do |post|
+    .post
+      .post-head
+        .name
+          Chris White
+      %p.content
+        =post.content
